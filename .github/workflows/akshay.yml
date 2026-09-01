@@ -1,0 +1,14 @@
+name: superstar
+
+on: [push]
+
+jobs:
+  akshayjob:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: installing pip
+        run: apt-get update && apt-get install nano
+
+      - name: displaying hello
+        run: echo "display the hello content"
