@@ -1,0 +1,16 @@
+name: telengava
+on: [push]
+jobs:
+  hyderabad:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: welcome
+        run: echo "hello world"
+  wanaparthy:
+      runs-on: ubuntu-22.04
+
+      steps:
+        - name: gadder
+          run: echo "hello from wanaparthy"
+      
