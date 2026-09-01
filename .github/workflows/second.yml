@@ -1,0 +1,17 @@
+name: mysecondworkflow
+
+on: 
+    push:
+      branches: [practice]
+
+jobs:
+  first_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: setup
+        run: |
+         echo "hello world"
+         echo "welcome"
+       
+    
+  
