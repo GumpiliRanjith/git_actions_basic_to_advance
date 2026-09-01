@@ -1,0 +1,13 @@
+name: Ranjithflow
+
+on : [push]
+
+jobs:
+   first_job:
+       runs-on: ubuntu-22.04
+        
+       steps:
+         - name: print
+           run : echo "hello world"
+         - name: cool
+           run : echo "welcome to sakum bhai"
