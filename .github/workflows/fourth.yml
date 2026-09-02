@@ -1,6 +1,6 @@
 name: hellowrod
 
-on: workds
+on: push
 
 jobs:
     kumar:
