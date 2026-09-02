@@ -1,6 +1,6 @@
 name: welcometomyworld
 
-on: workflow_dispatch
+on: push
 
 jobs:
   automate:
