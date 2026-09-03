@@ -1,0 +1,30 @@
+name: welcome
+
+on: push
+
+jobs:
+    ranjith:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: install repo
+              uses: actions/checkout@v4
+
+            - name: install npm
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+            
+            - name: install dependencies
+              run: npm ci
+
+            - name: tell
+              run: echo "successfull"
+
+    rohit:
+        needs: ranjith
+        runs-on: ubuntu-latest
+        steps:
+            - name: succesfulll
+              run: echo "hello world"
+              
