@@ -10,6 +10,7 @@ jobs:
         run: echo "hello world"
       
   mango:
+    needs: orange
     runs-on: ubuntu-latest
     steps:
       - name: moderate
